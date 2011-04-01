@@ -50,8 +50,24 @@
         if (operand) {
             operand = operand / (operand * operand);
         }
-        
     }else
+    if ([operation isEqual:@"Store"]) {
+        memory = operand;
+    }
+    else
+    if ([operation isEqual:@"Mem +"]) {
+        operand = operand + memory;
+    }
+    else
+    if ([operation isEqual:@"Recall"]) {
+        operand = memory;
+    }
+    else
+    if ([operation isEqual:@"C"]) {
+        memory = 0;
+        operand = 0;
+    }
+    else
     {
         [self performWaitingOperation];
         waitingOperation = operation;

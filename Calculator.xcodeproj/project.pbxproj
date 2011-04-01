@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		848F5314134683FB0036701A /* CalculatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848F5313134683FB0036701A /* CalculatorViewController.xib */; };
 		84BBEC59134646D500D0F8BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BBEC58134646D500D0F8BD /* UIKit.framework */; };
 		84BBEC5B134646D500D0F8BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BBEC5A134646D500D0F8BD /* Foundation.framework */; };
 		84BBEC5D134646D500D0F8BD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BBEC5C134646D500D0F8BD /* CoreGraphics.framework */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		848F5313134683FB0036701A /* CalculatorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalculatorViewController.xib; sourceTree = "<group>"; };
 		84BBEC54134646D500D0F8BD /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84BBEC58134646D500D0F8BD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		84BBEC5A134646D500D0F8BD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -87,6 +89,7 @@
 				84BBEC6E134646D500D0F8BD /* CalculatorViewController.m */,
 				84BBEC78134647FE00D0F8BD /* CalculatorBrain.h */,
 				84BBEC79134647FE00D0F8BD /* CalculatorBrain.m */,
+				848F5313134683FB0036701A /* CalculatorViewController.xib */,
 				84BBEC5F134646D500D0F8BD /* Supporting Files */,
 			);
 			path = Calculator;
@@ -152,6 +155,7 @@
 			files = (
 				84BBEC63134646D500D0F8BD /* InfoPlist.strings in Resources */,
 				84BBEC6C134646D500D0F8BD /* MainWindow.xib in Resources */,
+				848F5314134683FB0036701A /* CalculatorViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +276,7 @@
 				84BBEC77134646D500D0F8BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
