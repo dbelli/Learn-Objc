@@ -21,12 +21,20 @@
 -(IBAction)digitPressed:(UIButton *)sender{
     NSString *digit = [[sender titleLabel]text];
     if (userIsInTheMiddleOfTypingANumber) {
-        [display setText:[[display text] stringByAppendingString:digit]]; 
-        }else
-        {
+        if ([digit isEqual:@"."]) {
+            NSRange range = [[display text]rangeOfString:@"."];
+            if (range.location == NSNotFound) {
+                [display setText:[[display text] stringByAppendingString:digit]]; 
+            }
+        }else {
+            [display setText:[[display text] stringByAppendingString:digit]]; 
+        }
+        
+    }else
+    {
         [display setText:digit];
         userIsInTheMiddleOfTypingANumber = YES; 
-        }
+    }
         
 }
 -(IBAction)operationPressed:(UIButton *)sender{

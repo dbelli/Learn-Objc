@@ -37,8 +37,20 @@
     if ([operation isEqual:@"Sqrt"]) {
         operand = sqrt(operand);
     }else 
+    if ([operation isEqual:@"sine"]) {
+        operand = sin(operand);
+    }else
+    if ([operation isEqual:@"cos"]) {
+            operand = cos(operand);
+    }else
     if ([@"+/-" isEqual:operation]) {
         operand = - operand;
+    }else
+    if ([@"1/x" isEqual:operation]) {
+        if (operand) {
+            operand = operand / (operand * operand);
+        }
+        
     }else
     {
         [self performWaitingOperation];

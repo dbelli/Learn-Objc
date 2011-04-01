@@ -15,7 +15,6 @@
 		84BBEC69134646D500D0F8BD /* CalculatorAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BBEC68134646D500D0F8BD /* CalculatorAppDelegate.m */; };
 		84BBEC6C134646D500D0F8BD /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BBEC6A134646D500D0F8BD /* MainWindow.xib */; };
 		84BBEC6F134646D500D0F8BD /* CalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BBEC6E134646D500D0F8BD /* CalculatorViewController.m */; };
-		84BBEC72134646D500D0F8BD /* CalculatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BBEC70134646D500D0F8BD /* CalculatorViewController.xib */; };
 		84BBEC7A134647FE00D0F8BD /* CalculatorBrain.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BBEC79134647FE00D0F8BD /* CalculatorBrain.m */; };
 /* End PBXBuildFile section */
 
@@ -33,7 +32,6 @@
 		84BBEC6B134646D500D0F8BD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		84BBEC6D134646D500D0F8BD /* CalculatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculatorViewController.h; sourceTree = "<group>"; };
 		84BBEC6E134646D500D0F8BD /* CalculatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorViewController.m; sourceTree = "<group>"; };
-		84BBEC71134646D500D0F8BD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CalculatorViewController.xib; sourceTree = "<group>"; };
 		84BBEC78134647FE00D0F8BD /* CalculatorBrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorBrain.h; sourceTree = "<group>"; };
 		84BBEC79134647FE00D0F8BD /* CalculatorBrain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorBrain.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,7 +87,6 @@
 				84BBEC6E134646D500D0F8BD /* CalculatorViewController.m */,
 				84BBEC78134647FE00D0F8BD /* CalculatorBrain.h */,
 				84BBEC79134647FE00D0F8BD /* CalculatorBrain.m */,
-				84BBEC70134646D500D0F8BD /* CalculatorViewController.xib */,
 				84BBEC5F134646D500D0F8BD /* Supporting Files */,
 			);
 			path = Calculator;
@@ -155,7 +152,6 @@
 			files = (
 				84BBEC63134646D500D0F8BD /* InfoPlist.strings in Resources */,
 				84BBEC6C134646D500D0F8BD /* MainWindow.xib in Resources */,
-				84BBEC72134646D500D0F8BD /* CalculatorViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,14 +186,6 @@
 				84BBEC6B134646D500D0F8BD /* en */,
 			);
 			name = MainWindow.xib;
-			sourceTree = "<group>";
-		};
-		84BBEC70134646D500D0F8BD /* CalculatorViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				84BBEC71134646D500D0F8BD /* en */,
-			);
-			name = CalculatorViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
