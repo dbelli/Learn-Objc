@@ -22,29 +22,34 @@
     NSString *digit = [[sender titleLabel]text];
     if (userIsInTheMiddleOfTypingANumber) {
         if ([digit isEqual:@"."]) {
-            NSRange range = [[display text]rangeOfString:@"."];
+            NSRange range = [display.text rangeOfString:@"."];
             if (range.location == NSNotFound) {
-                [display setText:[[display text] stringByAppendingString:digit]]; 
+                //[display setText:[[display text] stringByAppendingString:digit]]; 
+                display.text = [display.text stringByAppendingString:digit]; 
             }
         }else {
-            [display setText:[[display text] stringByAppendingString:digit]]; 
+            display.text = [display.text stringByAppendingString:digit]; 
         }
         
     }else
     {
-        [display setText:digit];
+        //[display setText:digit];
+        display.text = digit;
         userIsInTheMiddleOfTypingANumber = YES; 
     }
         
 }
 -(IBAction)operationPressed:(UIButton *)sender{
     if (userIsInTheMiddleOfTypingANumber) { 
-        [[self brain] setOperand:[[display text] doubleValue]]; 
+        //[[self brain] setOperand:[[display text] doubleValue]]; 
+        self.brain.operand = [display.text doubleValue]; 
         userIsInTheMiddleOfTypingANumber = NO;
     }
     NSString *operation = [[sender titleLabel] text];
-    double result = [[self brain]performOperation:operation];
-    [display setText:[NSString stringWithFormat:@"%g",result]];
+    //double result = [[self brain]performOperation:operation];
+    [self.brain performOperation:operation];
+    //[display setText:[NSString stringWithFormat:@"%g",result]];
+    display.text = [NSString stringWithFormat:@"%g",self.brain.operand];
     
 }
 

@@ -15,6 +15,7 @@
     double memory;
     NSString *waitingOperation;
 }
--(void)setOperand:(double)aDouble;
+@property double operand;
+//-(void)setOperand:(double)aDouble;
 -(double)performOperation:(NSString *)operation;
 @end
